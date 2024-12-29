@@ -35,7 +35,7 @@ const Login = () => {
           password
         };
         try{
-        const response = await axios.post("https://redesigned-yodel-r7466vwpxpv2pg9v-5173.app.github.dev:3000/api/v1/register", formData);
+        const response = await axios.post("http://localhost:3000/api/v1/register", formData);
          toast.success("Registration successfull");
          navigate("/login");
        }catch(err){

@@ -11,6 +11,10 @@ app.use(express.json());
 
 app.use(cors())
 app.use("/api/v1", mainRouter);
+app.get('/', (req, res) => {
+    res.send('Hello from the root URL!'); 
+    // Or send an HTML file, JSON data, etc.
+});
 
 const port = process.env.PORT || 3000;
 
